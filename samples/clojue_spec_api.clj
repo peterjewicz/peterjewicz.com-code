@@ -1,4 +1,6 @@
 ; (:require [clojure.spec.alpha :as spec])
+; Link to article: http://peterjewicz.com/using-clojure-spec-to-validate-api-routes/
+
 
 (def POSITION_VALUES ["Developer" "Manager" "Marketing" "Design"])
 
