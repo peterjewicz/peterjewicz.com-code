@@ -1,3 +1,5 @@
+; Link to article: http://peterjewicz.com/starting-with-clojures-threading-macros/
+
 (def Person
   {:name "Person" :address {:street {:number 123 :name "Fun Street"}}})
 
