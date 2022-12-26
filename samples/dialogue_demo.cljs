@@ -1,15 +1,6 @@
-(ns dialogue-demo.views
+(ns dialogue-demo
   (:require
-   [reagent.core :as r]
-   [re-frame.core :as re-frame]
-   [dialogue-demo.subs :as subs]
-   ))
-
-;; {:key {:description "" :options [:text "" :constraints [] :effects []]}}
-
-;; {:base [{:text "Here's a test description"
-;;          :options [{:display "Go Foward" :action [{:type :key :value :second}]}]}]}
-
+   [reagent.core :as r]))
 
 ;; In a real application you'd want to have this either at the component level 
 ;; or, more likely, stored in a state DB
@@ -27,6 +18,7 @@
                       :false {:display "You Don't Have it"} 
                       :true {:display "You Do have It"}}]}})
 
+; in a real application this would do something else and likely be its own multimethod flow
 (defn check-constraint []
   true)
 
